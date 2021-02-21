@@ -1,0 +1,44 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+
+void generatorImena(string ime, string prezime, string djevprez, string gradrodj){
+
+string tName,cityt,StarWarsName;
+tName=ime.substr(0,3);
+cityt=gradrodj.substr(0,2);
+StarWarsName=tName+cityt;
+//---------------------------------
+
+
+string aName, rodjg, prezimesw;
+
+aName=djevprez.substr(0,2);
+rodjg=gradrodj.substr(0,3);
+
+prezimesw=aName+rodjg;
+
+cout<<"Vase StarWars ime je:"<<StarWarsName<<" "<<prezimesw<<endl;
+}
+
+
+int main()
+{
+  string ime,prezime,djevprez,gradrodj;
+  cout<<"unesite ime:";
+  cin>>ime;
+  cout<<" unesite prezime:";
+  cin>>prezime;
+
+  cout<<"upisite majcino djevojacko prezime:";
+  cin>>djevprez;
+  cout<<"upisite grad u kojem ste rodjeni:";
+  cin>>gradrodj;
+  cout<<endl;
+
+
+  generatorImena(ime, prezime, djevprez, gradrodj);
+
+
+}
